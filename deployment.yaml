@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: pod-app
-          image: maharnackademin/pod-app:1.0
+          image: maharnackademin/pod-app:latest
           ports:
             - containerPort: 3000
