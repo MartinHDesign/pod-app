@@ -22,6 +22,7 @@ jobs:
         - name: build image
           run: |
             docker build -t ${{ secrets.DOCKER_USERNAME }}/pod-app:latest
+            docker push ${{ secrets.DOCKER_USERNAME }}/pod-app:latest
 
     deploy-to-kubernetes:
       needs: build-and-push
